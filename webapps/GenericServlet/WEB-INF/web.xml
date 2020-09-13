@@ -1,0 +1,32 @@
+<web-app>
+<welcome-file-list>
+<welcome-file>gen.html</welcome-file>
+<welcome-file>gen.jsp</welcome-file>
+<welcome-file>default.html</welcome-file>
+<welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+<filter>
+   <filter-name>LogFilter</filter-name>
+   <filter-class>LogFilter</filter-class>
+   <init-param>
+    <param-name>test-param</param-name>
+    <param-value>testParam</param-value>
+   </init-param>
+</filter>
+<filter-mapping>
+   <filter-name>LogFilter</filter-name>
+   <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<servlet>
+<servlet-name>MyGenericServlet</servlet-name>
+<servlet-class>Gen1</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>MyGenericServlet</servlet-name>
+<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+
+</web-app>

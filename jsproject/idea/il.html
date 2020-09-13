@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+var B=new Array("m1.jpg","m2.jpg");
+var c=0;
+function show()
+{
+
+if(document.images)
+{
+
+document.ro.src=B[c];
+c++;
+setTimeout("show()",2000);
+if(c==B.length)
+{
+c=0;
+}
+}
+else if(document.images==null)
+{
+alert('not ');
+}
+
+}
+</script>
+</head>
+<body onload="show()" bgcolor="grey" >
+<p>
+recharge<br><br>
+netpack<br><br>
+netsetter<br></p>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<img src="" height="180" width="160" name="ro">
+<br>
+</body>
+</html>

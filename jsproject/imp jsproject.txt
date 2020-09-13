@@ -1,0 +1,7 @@
+1.see netbacking working
+2.login form of all net-recharge
+3.paytm working
+
+4.add status bar messages about warning complaint
+
+5.create credit or debit form...

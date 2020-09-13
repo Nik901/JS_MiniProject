@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+<!--
+Banners=new Array('images(13).jpg','images.jpg','untitled.png')
+CurrentBanner=0;
+function b()
+{
+ if(document.images)
+   {
+     CurrentBanner++
+     if(CurrentBanner==Banners.length) 
+         {
+           CurrentBanner=0
+         }
+    document.RotateBanner.src=Banners[CurrentBanner]
+   setTimeout("b()",1000)
+   }
+}
+-->
+</script>
+<body onload="b()">
+<center>
+<img src="C:\Users\USER\Desktop\JS PROJECT\photo\untitled.png" width=200 height="300" name="RotateBanner">
+<br><br>
+<marquee> <h1>DO YOUR DISH TV RECHARGE HERE.</h1></marquee>
+<a href=http://www.dishtv.in><h3>www.rechargeDTH.com<h3></a>
+<a href=http://www.dishtv.in><h3>www.rechargeitnow.com<h3></a>
+<a href=http://www.dishtv.in><h3>www.dishtvin.com<h3></a>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<web-app>
+<servlet>
+  <servlet-name>Addition</servlet-name>
+  <servlet-class>Addition</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>Addition</servlet-name>
+  <url-pattern>/mohi</url-pattern>
+</servlet-mapping>
+</web-app>

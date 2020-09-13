@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+<!--
+Banners=new Array('giphy.gif','giphy.gif','giphy.gif')
+CurrentBanner=0;
+function b()
+{
+ if(document.images)
+   {
+     CurrentBanner++
+     if(CurrentBanner==Banners.length) 
+         {
+           CurrentBanner=0
+         }
+    document.RotateBanner.src=Banners[CurrentBanner]
+   setTimeout("b()",1000)
+   }
+}
+-->
+</script>
+<body onload="b()">
+<marquee> <h1>ONLINE QUIZ GAME</h1></marquee>
+
+<center>
+
+<img src="img/giphy.gif" width=700 height="400" name="RotateBanner">
+<br><br>
+
+</center>
+</body>
+</html>

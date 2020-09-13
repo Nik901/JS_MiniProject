@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+.button2 {
+    background-color: #000066;
+    border: 2x outset #000066;
+    color: white;
+    padding: 4px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:2px;
+}
+w
+{
+ font-size:20px;
+}
+</style>
+<script >
+function check1()
+{
+with(document.forms.net)
+{
+if(ac.value.length!=16)
+{
+alert("Your account no is not correct")
+}
+
+if(otpno.value.length!=4)
+{
+alert("pls enter correct otp..")
+}
+else
+{
+alert('recharge successful ..Thank u..');
+}
+}
+}
+</script>
+<script>
+function msg()
+{
+alert('otp is sent to your register mobile no.');
+}
+function msg2()
+{
+alert('3 on back')
+}
+</script>
+<body bgcolor=white>
+<center>
+<div id="form" style="position:center;left:20px;width:700px;height:400;background-color:fff;border:solid 2px;">
+<form name="net">
+<w>
+<br>
+
+ Account No:<input type="number" name="ac" size="4" >  <br><br>
+   
+<button type="button" onclick="msg()">send otp</button> &nbsp&nbspOTP     :<input type="number" name="otpno" ><BR><br>
+</left><a href="MYPROJECT.html" class=button2 onclick="check1()">PAYMENT</a></left><br>
+</w>
+
+
+</font>
+</form>
+
+</div>
+</center>
+
+
+
+</body>
+</head>
+</html>

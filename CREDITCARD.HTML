@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+.button2 {
+    background-color: #000066;
+    border: 2x outset #000066;
+    color: white;
+    padding: 4px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:2px;
+}
+w
+{
+ font-size:20px;
+}
+</style>
+<script >
+function check1()
+{
+with(document.forms.credit)
+{
+if(crdno.value.length!=16)
+{
+alert("Your card no is not correct")
+}
+if(cvvno.value.length!=3)
+{
+alert("pls check the CVV code again")
+}
+if(otpno.value.length!=4)
+{
+alert("pls enter correct otp..")
+}
+else
+{
+alert('recharge successful ..Thank u..');
+}
+}
+}
+</script>
+<script>
+function msg()
+{
+alert('otp is sent to your register mobile no.');
+}
+function msg2()
+{
+alert('3 on back')
+}
+</script>
+<body bgcolor=white>
+<center>
+<div id="form" style="position:center;left:20px;width:700px;height:400;background-color:fff;border:solid 2px;">
+<form name="credit">
+<w>
+<br>
+
+ Creadit Card No:<input type="number" name="crdno" size="4" >  <br><br>
+                       
+
+ Expiry month:<select height="2" width="50" name="mn">
+          <option value="1">JAN</option>
+          <option value="2">FEB</option>
+          <option value="3">MARCH</option>
+          <option value="4">APRIL</option> 
+          <option value="6">MAY</option>
+          <option value="7">JUNE</option>
+          <option value="8">JULY</option>
+          <option value="9">AUGUST</option>
+          <option value="10">SEPTEMBER</option>
+	<option>OCTOMBER</option>
+<option >NOVMBER</option>
+<option >DECEMBER</option></SELECT>year: <select height="2" width="100" name="yr" >
+          <option >2017</option>
+          <option >2018</option>
+          <option >2019</option>
+          <option >2020</option> 
+          <option >2021</option>
+          <option >2022</option>         
+</select><br><br>
+select: <select height="2" width="100">
+          <option >VISA</option>
+          <option >RUPAY</option>
+          <option >MASTER CARD</option>
+                 
+</select><br><br>
+CCV:<input type="number" name="cvvno" onclick="msg2()"><br><br><br>
+<button type="button" onclick="msg()">send otp</button> &nbsp&nbspOTP     :<input type="number" name="otpno" ><BR><br>
+</left><a href="MYPROJECT.html" class=button2 onclick="check1()">PAYMENT</a></left><br>
+</w>
+
+
+</font>
+</form>
+
+</div>
+</center>
+
+
+
+</body>
+</head>
+</html>

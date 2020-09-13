@@ -1,0 +1,57 @@
+<html>
+<head >
+<script>
+<!--
+Banners=new Array('i2.png','minion.jpeg','ready.jpeg')
+CurrentBanner=0;
+function b()
+{
+ if(document.images)
+   {
+     CurrentBanner++
+     if(CurrentBanner==Banners.length) 
+         {
+           CurrentBanner=0
+         }
+    document.RotateBanner.src=Banners[CurrentBanner]
+   setTimeout("b()",5000)
+   }
+}
+-->
+</script>
+
+<style>
+.button {
+    background-color:#4CAF50;
+    border: 2x outset #000066;
+    color: white;
+    padding: 4px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:2px;
+}
+w
+{
+ font-size:20px;
+}
+</style>
+</head>
+<body onload="b()">
+<center>
+<a href="login.jsp">
+<input type="submit" value="LOGIN" class=button></a>
+
+<a href="reg1.jsp">
+<input type="submit" value="REGISTRATION" class=button></a>
+</center>
+<br>
+<center><img src="i2.png" height="350" width="900" name="RotateBanner">
+</center>
+
+
+</body>
+</html
